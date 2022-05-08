@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --hue-color: 230;
+  --main-color: #ffffff;
+  --white: #fff;
+  --black: #000;
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+  --scroll-thumb-color-hover: hsl(var(--hue-color), 21%, 78%);
+}
+
+::-webkit-scrollbar {
+  width: .60rem;
+  background-color: var(--scroll-bar-color);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scroll-thumb-color-hover);
+}
+
+.fs-10px {
+  font-size: 10px;
+}
+
+.fs-12px {
+  font-size: 12px;
+}
+
+.fs-14px {
+  font-size: 14px;
+}
+
+.fs-16px {
+  font-size: 16px;
+}
+
+.fs-18px {
+  font-size: 18px;
+}
+
+.fs-20px {
+  font-size: 20px;
+}
+
+.fs-26px {
+  font-size: 26px;
+}
+
+.fs-32px {
+  font-size: 32px;
+}
+
+.black {
+  color: var(--black);
+}
+
+.border-b-3px {
+  border-bottom: 3px solid var(--black);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.scroll-header {
+  -webkit-box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.15);
+}
+
+.scrollup {
+  position: fixed;
+  right: 2rem;
+  bottom: -20%;
+  background-color: var(--black);
+  opacity: 0.8;
+  padding: 0 .3rem;
+  border-radius: .4rem;
+  z-index: 9;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.scroll__icon {
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+.show-scroll {
+  bottom: 4rem;
+}
+
+.btn-check:focus + .btn,
+.btn:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.0rem #8e8ea950;
+  box-shadow: 0 0 0 0.0rem #8e8ea950;
+}
+
+.form-control:focus + .form-control,
+.form-control:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0rem #8e8ea950;
+  box-shadow: 0 0 0 0rem #8e8ea950;
+  border-color: #bbbbbb;
+}
+
+.form-select:focus {
+  border-color: #bbbbbb;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.0rem #8e8ea950;
+  box-shadow: 0 0 0 0.0rem #8e8ea950;
+}
+
+.bg-navbar {
+  background-color: var(--white);
+}
+
+.dropdown .nav-btn {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: color 600ms;
+  transition: color 600ms;
+  padding: 8px 25px;
+}
+
+.dropdown .nav-btn:hover {
+  color: var(--white) !important;
+}
+
+.dropdown .nav-btn:hover a {
+  color: var(--white) !important;
+}
+
+.dropdown .nav-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 0;
+  height: 100%;
+  background-color: #000;
+  -webkit-transform: skewX(35deg);
+          transform: skewX(35deg);
+  z-index: -1;
+  -webkit-transition: width 600ms;
+  transition: width 600ms;
+}
+
+.dropdown .nav-btn:hover::before {
+  width: 200%;
+}
+
+.nav-btn {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: color 600ms;
+  transition: color 600ms;
+  padding: 1px 15px;
+}
+
+.nav-btn:hover {
+  color: var(--white) !important;
+}
+
+.nav-btn:hover a {
+  color: var(--white) !important;
+}
+
+.nav-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 0;
+  height: 100%;
+  background-color: #000;
+  -webkit-transform: skewX(35deg);
+          transform: skewX(35deg);
+  z-index: -1;
+  -webkit-transition: width 600ms;
+  transition: width 600ms;
+}
+
+.nav-btn:hover::before {
+  width: 200%;
+}
+
+.home__scroll {
+  position: absolute;
+  animation: down 2s infinite;
+  -webkit-animation: down 2s infinite;
+  bottom: 5rem;
+}
+
+@keyframes down {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+  40% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes down {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+  40% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+.home__scroll-button {
+  color: var(--black);
+  -webkit-transition: .3s;
+  transition: .3s;
+  text-decoration: none;
+}
+
+.home__scroll-button:hover {
+  color: var(--black);
+}
+
+.home__scroll-mouse {
+  font-size: 2rem;
+}
+
+.home__scroll-name {
+  font-size: 14px;
+  color: var(--black);
+  font-weight: 500;
+  margin-right: var(--mb-0-25);
+}
+
+.home__scroll-arrow {
+  font-size: 1.25rem;
+}
+
+.home {
+  min-height: 100vh;
+}
+
+.home .container {
+  position: relative;
+}
+
+.home .container .home-title {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 5rem;
+  text-align: center;
+}
+
+.home .container .home-title h1 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 75px;
+}
+
+.home .box-title {
+  /* From https://css.glass */
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  padding: 5rem 10rem;
+  top: 12rem;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 0px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.3px);
+  -webkit-backdrop-filter: blur(4.3px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+.box-result {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.section-1 .nav-link {
+  border-radius: 0;
+  color: #757575;
+}
+/*# sourceMappingURL=style.css.map */
