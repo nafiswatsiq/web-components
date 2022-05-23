@@ -11,6 +11,7 @@
   --main-color: #ffffff;
   --white: #fff;
   --black: #000;
+  --text-color-sec: rgb(88, 88, 88);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
   --scroll-thumb-color-hover: hsl(var(--hue-color), 21%, 78%);
@@ -295,6 +296,10 @@
   font-family: 'Dancing Script', cursive;
   font-weight: 700;
   font-size: 75px;
+}
+
+.home .container .home-title h5 {
+  color: var(--text-color-sec);
 }
 
 .home .box-title {

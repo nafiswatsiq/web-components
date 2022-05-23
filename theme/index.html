@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="assets/vendors/bootstrap-5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="nav-content">
+        <div class="navbar container">
+            <a href="#" class="logo"><img class="nav-logo" src="./assets/img/logo-png.png" alt=""></a>
+            <div id="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu" id="list-menu">
+               <ul class="list">
+                    <li class="list-item">
+                        <a class="nav-link" href="#"> Home </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="nav-link" href="#"> About </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="nav-link" href="#"> Contact </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+     </nav>
+    <section class="section-home">
+        <div class="container">
+            <div class="box-content-home">
+                <div class="cross"></div>
+            </div>
+        </div>
+    </section>   
+
+
+    <script src="assets/vendors/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const navMenu=document.querySelector("#navMenu"),
+            listMenu = document.querySelector("#list-menu");
+
+        navMenu.addEventListener("click",()=>{
+            navMenu.classList.toggle("active");
+            listMenu.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
